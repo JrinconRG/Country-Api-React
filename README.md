@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
@@ -34,3 +35,16 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+=======
+# Country-Api-React
+Mini app desarrollada con react que consume la api de REST COUNTRIES para visualizar información global detallada. Implantando el manejo de estados asincrónicos mediante useEffect y fetch/axios, permitiendo la búsqueda y filtrado de países por nombre y región, con visualización de banderas, capitales y coordenadas geográficas.
+# Características
+Listado Global: Visualización de tarjetas con nombre, bandera, capital y moneda.
+Búsqueda en Tiempo Real: Filtrado dinámico de países por nombre.
+Geolocalización: Muestra coordenadas de latitud y longitud.
+Filtros Avanzados: Opción de filtrar países por región geográfica.
+# Tecnologías Utilizadas
+React.js (Hooks: useState, useEffect)
+Consumo de API:Axios
+Estilos:Tailwind
+>>>>>>> 80d24e88bb5dccdcca92778885c17b6e67697ee8
