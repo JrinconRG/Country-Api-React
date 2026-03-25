@@ -1,6 +1,6 @@
 
 # Country-Api-React
-Mini app desarrollada con react que consume la api [REST Countries API](https://restcountries.com/v3.1/all) para visualizar información global detallada. Implantando el manejo de estados asincrónicos mediante useEffect y fetch/axios, permitiendo la búsqueda y filtrado de países por nombre y región, con visualización de banderas, capitales y coordenadas geográficas.
+Mini app desarrollada con react que consume la api [REST Countries API](https://restcountries.com/v3.1/all?fields=name,capital,currencies,flags,latlng) para visualizar información global detallada. Implantando el manejo de estados asincrónicos mediante useEffect y fetch/axios, permitiendo la búsqueda y filtrado de países por nombre y región, con visualización de banderas, capitales y coordenadas geográficas.
 # Características
 Listado Global: Visualización de tarjetas con nombre, bandera, capital y moneda.
 Búsqueda en Tiempo Real: Filtrado dinámico de países por nombre.
