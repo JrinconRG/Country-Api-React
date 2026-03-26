@@ -2,7 +2,7 @@ import axiosFetch from "../lib/axios";
 import {Country} from "../types/countries"
 
 export const getCountries = async():Promise<Country[]> => {
-    const response = await axiosFetch.get<Country[]>('all?fields=name,capital,currencies,flags,latlng');
+    const response = await axiosFetch.get<Country[]>('all?fields=name,capital,currencies,flags,latlng,region');
     return response.data;
 }
 

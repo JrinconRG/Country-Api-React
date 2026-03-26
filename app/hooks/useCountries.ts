@@ -29,10 +29,11 @@ export const useCountries =() => {
     const fetchByName = async(name:string) =>{
         if(!name) return fetchCountriesAll();
         setLoading(true);
+        setError(null);
+
         try{ 
             const dataByName = await getCountriesByName(name);
             setCountries(dataByName);
-            setError(null);
         }catch{
             setError("No se encontro ningun pais con ese Nombre");
             setCountries([]);
