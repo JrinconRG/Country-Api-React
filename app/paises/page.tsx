@@ -1,24 +1,22 @@
 'use client';
 
 import { useCountries } from "../hooks/useCountries";
-import Link from 'next/link';
+import Header from "../../app/components/header";
 
 
 export default function PaisesPage() {
   const { countries, loading, error, fetchByName, fetchFilterByRegion } = useCountries();
 
   return (
-    <div className="p-6 bg-slate-50 min-h-screen">
+    
+    <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
+      <Header/>
       <div className="max-w-7xl mx-auto">
-<header className="bg-white shadow-sm sticky top-0 z-50 flex items-center justify-between p-4 m-5">
+<div className="bg-white shadow-sm sticky  z-50 flex items-center justify-between p-4 m-5">
           <h1 className="text-3xl font-black text-slate-800 uppercase tracking-tight">Directorio Global</h1>
           <p className="text-slate-500">Datos en tiempo real de naciones del mundo.</p>
-          <Link href="/">
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-          Volver a Inicio
-        </button>
-        </Link>
-        </header>
+          
+        </div>
 
         {/* --- CONTROLES --- */}
         <div className="flex flex-col md:flex-row gap-4 mb-10">
@@ -80,7 +78,7 @@ export default function PaisesPage() {
                   
                   <h2 className="text-xl font-bold text-slate-800 mb-1 leading-tight">{country.name.common}</h2>
                   <span className="text-xs font-bold text-indigo-500 bg-indigo-50 px-3 py-1 rounded-full uppercase mb-4">
-                    {country.region}
+                    Region:{country.region}
                   </span>
 
                   <div className="w-full space-y-3 pt-2 border-t border-slate-50 text-sm">

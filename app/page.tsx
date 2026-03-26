@@ -2,8 +2,7 @@
 
 import React from 'react';
 import {  FaUsers, FaGlobeAmericas, FaSearch, FaMapMarkerAlt, FaFilter } from 'react-icons/fa';
-import Link from 'next/link';
-
+import Header from "../app/components/header";
 export default function HomePage() {
   
   // Datos 
@@ -16,21 +15,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
       
       {/* BARRA DE NAVEGACIÓN */}
-      <header className="bg-white shadow-sm sticky top-0 z-50">
-        <nav className="max-w-6xl mx-auto px-4 py-4 flex justify-between items-center">
-          <div className="flex items-center gap-2">
-            <FaGlobeAmericas className="text-blue-600 text-2xl" />
-            <span className="text-xl font-bold">Country App</span>
-          </div>
-          <Link href="/paises">
-          <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">
-          Explorar Países
-        </button>
-        </Link>
-            
-          
-        </nav>
-      </header>
+      <Header/>
 
       {/*  PRINCIPAL */}
       <main className="max-w-5xl mx-auto px-4 py-16">
