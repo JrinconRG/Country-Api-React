@@ -10,6 +10,8 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+   --color-brand: #3b82f6;
+  --font-sans: "Inter", sans-serif;
 }
 
 @media (prefers-color-scheme: dark) {
