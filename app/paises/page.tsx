@@ -12,13 +12,12 @@ export default function PaisesPage() {
     <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
       <Header/>
       <div className="max-w-7xl mx-auto">
-<div className="bg-white shadow-sm sticky  z-50 flex items-center justify-between p-4 m-5">
+        <div className="bg-white shadow-sm  flex items-center justify-between p-4 mb-5 mt-4">
           <h1 className="text-3xl font-black text-slate-800 uppercase tracking-tight">Directorio Global</h1>
           <p className="text-slate-500">Datos en tiempo real de naciones del mundo.</p>
           
         </div>
 
-        {/* --- CONTROLES --- */}
         <div className="flex flex-col md:flex-row gap-4 mb-10">
           <input
             type="text"
@@ -61,7 +60,6 @@ export default function PaisesPage() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
           {!loading && countries.length > 0 ? (
             countries.map((country) => {
-              // Lógica para extraer monedas (CurrencyInfo)
               const monedas = country.currencies 
                 ? Object.values(country.currencies)
                     .map(m => `${m.name} [${m.symbol}]`)

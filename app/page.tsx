@@ -14,7 +14,6 @@ export default function HomePage() {
   return (
     <div className="min-h-screen bg-gray-50 text-gray-900 font-sans">
       
-      {/* BARRA DE NAVEGACIÓN */}
       <Header/>
 
       {/*  PRINCIPAL */}
@@ -73,7 +72,6 @@ export default function HomePage() {
           </div>
         </section>
 
-        {/* INTEGRANTES */}
         <section className="space-y-8">
           <h2 className="text-2xl font-bold text-center flex items-center justify-center gap-2">
             <FaUsers className="text-blue-600" /> Integrantes del Grupo
