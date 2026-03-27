@@ -2,6 +2,7 @@
 
 import React from 'react';
 import {  FaUsers, FaGlobeAmericas, FaSearch, FaMapMarkerAlt, FaFilter } from 'react-icons/fa';
+import Footer from "../app/components/footer";
 import Header from "../app/components/header";
 export default function HomePage() {
   
@@ -91,10 +92,7 @@ export default function HomePage() {
         </section>
       </main>
 
-      {/* FOOTER */}
-      <footer className="text-center py-10 border-t border-gray-200">
-        <p className="text-sm text-gray-400">© 2026 Country App - Universidad de Medellín</p>
-      </footer>
+      <Footer/>
     </div>
   );
 }
