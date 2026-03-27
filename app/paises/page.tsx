@@ -2,7 +2,7 @@
 
 import { useCountries } from "../hooks/useCountries";
 import Header from "../../app/components/header";
-
+import Footer from "../../app/components/footer";
 
 export default function PaisesPage() {
   const { countries, loading, error, fetchByName, fetchFilterByRegion } = useCountries();
@@ -106,6 +106,7 @@ export default function PaisesPage() {
             !loading && !error && <p className="col-span-full text-center text-slate-400">No hay resultados para tu búsqueda.</p>
           )}
         </div>
+        <Footer/>
       </div>
     </div>
   );
